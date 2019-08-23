@@ -1,0 +1,9 @@
+#!/bin/bash
+cd /var/www/html/houseoftracks_api
+sudo composer install
+sudo php artisan key:generate
+sudo chmod -R 777 storage
+sudo php artisan migrate
+sudo composer dump-autoload
+sudo php artisan db:seed 
+

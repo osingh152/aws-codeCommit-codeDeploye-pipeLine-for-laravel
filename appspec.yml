@@ -1,0 +1,11 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /var/www/html/houseoftracks_api/
+    overwrite: true
+hooks:
+   AfterInstall:
+    - location: scripts/install_composer_dependencies
+      timeout: 600
+      runas: root    
