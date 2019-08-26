@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /var/www/html/houseoftracks_api
+cd /var/www/html/directoryName
 sudo composer install
 sudo php artisan key:generate
 sudo chmod -R 777 storage
