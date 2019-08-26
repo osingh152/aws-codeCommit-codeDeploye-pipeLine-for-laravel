@@ -30,7 +30,7 @@ Now begin the process of setup CI/CD in AWS -
 			os: linux
 			files:
 			  - source: /
-				destination: /var/www/html/houseoftracks_api/
+				destination: /var/www/html/DirectoryName/
 				overwrite: true
 			hooks:
 			   AfterInstall:
@@ -48,7 +48,7 @@ Now begin the process of setup CI/CD in AWS -
 				- location: scripts/install_composer_dependencies -  This the file in which i have write the commands it supports shell script to write the code
 				Samle code for laravel deployment(scripts/install_composer_dependencies): 
 					#!/bin/bash
-					cd /var/www/html/houseoftracks_api
+					cd /var/www/html/DirectoryName
 					sudo composer install
 					sudo php artisan key:generate
 					sudo chmod -R 777 storage
